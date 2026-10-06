@@ -1,0 +1,18 @@
+# Local Python environments and caches
+.venv/
+venv/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated videos, source archives, and unused summary preview
+/output/
+*.mp4
+*.zip
+/assets/heading_grid.jpg
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store

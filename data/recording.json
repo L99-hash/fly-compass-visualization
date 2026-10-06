@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "title": "Three-lap simulated compass replay",
+  "sample_count": 879,
+  "neuron_count": 46,
+  "fps": 20,
+  "dt_s": 0.05,
+  "duration_s": 43.95,
+  "array_sha256": "70a44bc1faf3bd40ad8b9858e1339169bcf10a1f2e47ca1f0cf5836126b0e975",
+  "anatomical_dataset": "MaleCNS v1.0",
+  "recording_date": "2026-09-17",
+  "export_date": "2026-10-06",
+  "scene": {
+    "room_half_m": 3.2980416418069045,
+    "pillars": [
+      {
+        "position": [
+          2.540581260638434,
+          2.603973153678439,
+          0.85
+        ],
+        "radius": 0.12768114763101993
+      },
+      {
+        "position": [
+          -2.5813360340087415,
+          -2.5635782817213193,
+          0.85
+        ],
+        "radius": 0.18220843463201614
+      }
+    ]
+  },
+  "arrays": {
+    "neuron_ids": "MaleCNS body IDs, activity-column order",
+    "activity": "Dimensionless saved model rates, 0 to 1; samples x neurons",
+    "camera": "Rendered grayscale pixels; samples x 160 x 160",
+    "position": "Simulator position in metres; samples x 3",
+    "heading": "Actual simulator yaw in radians, not a model prediction",
+    "lap": "Recorded laps numbered 1, 2, 3",
+    "time_s": "Sample timestamps in seconds"
+  },
+  "selection": "First three complete consecutive laps of one existing development recording; no activity-based frame selection",
+  "model_state": "Fixed checkpoint, online plasticity off; no training or checkpoint is included",
+  "route_control": "Separate simulator controller; compass does not steer the route",
+  "limits": [
+    "Model activity, not measurements from a living fly",
+    "One scalar per neuron; no within-neuron propagation",
+    "Repeated activity does not establish place recognition",
+    "Historical development replay; not a benchmark or validation of the latest model"
+  ],
+  "creator": "Luca Crupi",
+  "recording_license": "CC-BY-4.0"
+}
